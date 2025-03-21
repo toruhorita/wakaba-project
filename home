@@ -1,0 +1,40 @@
+<?php
+/*
+Template Name: わかばプロジェクト
+*/
+get_header(); ?>
+
+<div class="donguri-container">
+    <section class="hero">
+        <h1>わかばプロジェクト｜日吉の森復活作戦 ver2.0</h1>
+        <p>どんぐりを集めて、未来の森を育てよう！</p>
+        <a href="#volunteer-form" class="btn-register">ボランティア登録</a>
+    </section>
+
+    <section class="project-overview">
+        <h2>わかばプロジェクトとは？</h2>
+        <p>どんぐりを集めて苗を育て、山に植えることで未来の森を作る活動です。</p>
+        <div class="process">
+            <div class="step">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/acorn.png" alt="どんぐりを集める">
+                <p>どんぐりを集める</p>
+            </div>
+            <div class="step">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/seedling.png" alt="苗を育てる">
+                <p>苗を育てる</p>
+            </div>
+            <div class="step">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mountain.png" alt="山に植える">
+                <p>山に植える</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer-form" class="volunteer-form">
+        <h2>ボランティア登録</h2>
+        <p>以下のフォームに入力してご登録ください。</p>
+        <?php echo do_shortcode('[contact-form-7 id="1234" title="ボランティア登録フォーム"]'); ?>
+    </section>
+</div>
+
+<?php get_footer(); ?>
